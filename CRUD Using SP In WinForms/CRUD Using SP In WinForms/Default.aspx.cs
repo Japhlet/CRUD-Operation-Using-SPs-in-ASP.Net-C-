@@ -13,5 +13,15 @@ namespace CRUD_Using_SP_In_WinForms
         {
 
         }
+
+        protected void BtnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BtnInsert_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
