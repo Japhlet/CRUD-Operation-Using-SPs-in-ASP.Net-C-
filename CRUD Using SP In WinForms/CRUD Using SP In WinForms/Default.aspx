@@ -50,5 +50,9 @@
                 </td>
             </tr>
         </table> 
-    </div>    
+    </div> 
+    
+    <div>
+        <asp:GridView ID="GridRetrieveProperties" runat="server"></asp:GridView>
+    </div>
 </asp:Content>

@@ -14,7 +14,35 @@ namespace CRUD_Using_SP_In_WinForms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string conn = "";
+            conn = ConfigurationManager.ConnectionStrings["Conn"].ToString();
+            SqlConnection objSqlConnection = new SqlConnection(conn);
 
+            try
+            {
+                objSqlConnection.Open();
+
+                DataSet ds = new DataSet();
+
+                SqlCommand objSqlCmd = new SqlCommand("usp_ListProperties", objSqlConnection);
+                objSqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter property_id = objSqlCmd.Parameters.Add("@PropertyID", SqlDbType.Int);
+                property_id.Value = 0;
+
+                SqlDataAdapter objAdapter = new SqlDataAdapter(objSqlCmd);
+                objAdapter.Fill(ds);
+
+                GridRetrieveProperties.DataSource = ds;
+                GridRetrieveProperties.DataBind();
+
+            } catch(Exception ex)
+            {
+                Response.Write(ex.Message.ToString());
+            } finally
+            {
+                objSqlConnection.Close();
+            }
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
