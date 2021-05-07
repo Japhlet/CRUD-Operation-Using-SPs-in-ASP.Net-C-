@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD Using SP In WinForms", "CRUD Using SP In WinForms\CRUD Using SP In WinForms.csproj", "{A88827A2-CFE5-47C5-BEFA-C4913DB176B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A88827A2-CFE5-47C5-BEFA-C4913DB176B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88827A2-CFE5-47C5-BEFA-C4913DB176B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88827A2-CFE5-47C5-BEFA-C4913DB176B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88827A2-CFE5-47C5-BEFA-C4913DB176B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB897FB3-32B6-4AAF-956B-AA41EC274B6D}
+	EndGlobalSection
+EndGlobal
