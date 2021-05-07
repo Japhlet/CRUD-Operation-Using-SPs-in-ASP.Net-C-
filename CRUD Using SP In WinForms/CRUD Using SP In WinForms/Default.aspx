@@ -35,7 +35,7 @@
                 <td colspan="2"><asp:HiddenField ID="TxtPropertyID" runat="server" /></td>                
             </tr>
 
-            <tr>
+            <tr>                
                 <td colspan="2">
                     <asp:Button ID="BtnUpdate" runat="server" Text="Update Property" OnClick="BtnUpdate_Click" />
                     &nbsp;
